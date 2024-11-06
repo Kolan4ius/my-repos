@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кино</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #ffc107;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 80px); /* высота экрана минус высота шапки */
+        }
+
+        .movie-container {
+            width: 800px;
+            background-color: white;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            padding: 40px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: #212121;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 200px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #ffc107;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Кино</h1>
+    </header>
+    
+    <main>
+        <div class="movie-container">
+            <img src="https://via.placeholder.com/200x300.png?text=Постер+фильма" alt="Постер фильма">
+            <h2>Название фильма</h2>
+            <p><strong>Жанр:</strong> Драма, Комедия</p>
+            <p><strong>Режиссер:</strong> Иван Иванов</p>
+            <p><strong>Год выпуска:</strong> 2023</p>
+            <p><strong>Описание:</strong> Это история о том, как главный герой преодолевает трудности и находит счастье в самых неожиданных местах.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2023 Все права защищены</p>
+    </footer>
+</body>
+</html>
